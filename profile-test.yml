@@ -1,11 +1,10 @@
-
-spring:  
-  jpa:  
-    hibernate:  
-      ddl-auto: create  
-    database-platform: org.hibernate.dialect.PostgreSQLDialect  
-  datasource:  
-    url: jdbc:postgresql://localhost:5432/postgres
-    username: postgres  
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/profiledb?createDatabaseIfNotExist=true
+    username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
