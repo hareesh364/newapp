@@ -2,9 +2,6 @@ server:
   port: 8081
 
 spring:
-  application:
-    name: SampleApplication
-
   datasource:
     driver-class-name: org.postgresql.Driver
     username: postgres
@@ -14,4 +11,3 @@ spring:
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.PostgreSQLDialect
-© 2021 GitHub, Inc.
